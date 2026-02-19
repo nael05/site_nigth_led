@@ -424,4 +424,9 @@ footer{background:#000;border-top:1px solid var(--border);padding:5rem 2rem 2rem
   .svc-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}
   .gal-grid{grid-template-columns:1fr;grid-auto-rows:200px}.gi.big{grid-column:span 1}
   .fg-grid{grid-template-columns:1fr}.cform{padding:1.6rem}
+
+  .hero-h1 .l1 {
+    font-size: 3.5rem; 
+  }
+}
 }
