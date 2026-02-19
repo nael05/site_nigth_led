@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Night LED – Préparateur Premium · Namur</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader">
+  <div class="ld-logo">Night LED</div>
+  <div class="ld-bar"><div class="ld-fill"></div></div>
+</div>
+
+<div class="cursor" id="cur"></div>
+<div class="cursor-ring" id="curR"></div>
+
+<header id="hdr">
+  <div class="nav-inner">
+    <div class="logo">Night LED<small>Namur · Belgique</small></div>
+    <ul class="nav-links">
+      <li><a href="#hero">Accueil</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">Studio</a></li>
+      <li><a href="#gallery">Galerie</a></li>
+      <li><a href="#tarifs">Tarifs</a></li>
+      <li><a href="#contact" class="nav-cta">Rendez-vous</a></li>
+    </ul>
+    <button class="burger" id="burg"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="mobile-nav" id="mnav">
+  <a href="#hero"     onclick="cm()">Accueil</a>
+  <a href="#services" onclick="cm()">Services</a>
+  <a href="#about"    onclick="cm()">Studio</a>
+  <a href="#gallery"  onclick="cm()">Galerie</a>
+  <a href="#tarifs"   onclick="cm()">Tarifs</a>
+  <a href="#contact"  onclick="cm()">Contact</a>
+</div>
+
+<section id="hero">
+  <canvas id="heroCanvas"></canvas>
+  <div class="hero-ov"></div>
+  <div class="hero-content">
+    <div class="hero-pill"><span></span>Préparateur Premium · Namur<span></span></div>
+    <h1 class="hero-h1">
+      <span class="l1">Night LED</span>
+      <span class="l2">Transformation Automobile</span>
+    </h1>
+    <div class="hero-btns">
+      <a href="#services" class="btn btn-w">Nos prestations</a>
+      <a href="#contact"  class="btn btn-g">Prendre RDV</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-n" data-count="600">0</div><div class="stat-l">Véhicules</div></div>
+      <div class="stat"><div class="stat-n" data-count="15">0</div><div class="stat-l">Ans d'exp.</div></div>
+      <div class="stat"><div class="stat-n" data-count="12">0</div><div class="stat-l">Pays servis</div></div>
+      <div class="stat"><div class="stat-n" data-count="99">0</div><div class="stat-l">% Satisf.</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="mq-wrap">
+  <div class="mq-track">
+    <span class="mq-item"><span class="mq-dot"></span>Ciel de Toit Étoilé</span>
+    <span class="mq-item"><span class="mq-dot"></span>Covering Carrosserie</span>
+    <span class="mq-item"><span class="mq-dot"></span>Déchromage Premium</span>
+    <span class="mq-item"><span class="mq-dot"></span>Volants Cuir Nappa</span>
+    <span class="mq-item"><span class="mq-dot"></span>Caméras 360° HD</span>
+    <span class="mq-item"><span class="mq-dot"></span>Éclairage LED Ambiance</span>
+    <span class="mq-item"><span class="mq-dot"></span>Nettoyage Intérieur Luxe</span>
+    <span class="mq-item"><span class="mq-dot"></span>Déplacement International</span>
+    <span class="mq-item"><span class="mq-dot"></span>Ciel de Toit Étoilé</span>
+    <span class="mq-item"><span class="mq-dot"></span>Covering Carrosserie</span>
+    <span class="mq-item"><span class="mq-dot"></span>Déchromage Premium</span>
+    <span class="mq-item"><span class="mq-dot"></span>Volants Cuir Nappa</span>
+    <span class="mq-item"><span class="mq-dot"></span>Caméras 360° HD</span>
+    <span class="mq-item"><span class="mq-dot"></span>Éclairage LED Ambiance</span>
+    <span class="mq-item"><span class="mq-dot"></span>Nettoyage Intérieur Luxe</span>
+    <span class="mq-item"><span class="mq-dot"></span>Déplacement International</span>
+  </div>
+</div>
+
+<div id="services">
+<div class="sw">
+  <div class="sh rv">
+    <span class="sh-lbl">Ce que nous faisons</span>
+    <h2 class="sh-title">Nos Prestations</h2>
+    <div class="sh-line"></div>
+  </div>
+  <div class="svc-grid">
+
+    <div class="svc-card rv" style="transition-delay:.05s">
+      <div class="svc-img"><img src="https://kitcieletoile.com/wp-content/uploads/2023/09/kit-ciel-etoile.jpg.webp" alt="Ciel de toit étoilé"></div>
+      <div class="svc-num">01</div><div class="svc-title">Ciel de Toit</div>
+      <div class="svc-desc">Alcantara, daim, tissu étoilé LED jusqu'à 1200 points lumineux. Finition artisanale haut de gamme.</div>
+      <span class="svc-tag">Sur mesure</span><div class="svc-arr">→</div>
+    </div>
+
+    <div class="svc-card rv" style="transition-delay:.1s">
+      <div class="svc-img"><img src="https://www.leblog-carspassion.fr/wp-content/uploads/2022/03/Mercedes-Benz-GLE-Amg-Line-interieur-interior-night2.jpg" alt="Volant cuir"></div>
+      <div class="svc-num">02</div><div class="svc-title">Volants Premium</div>
+      <div class="svc-desc">Cuir Nappa, carbone, alcantara. Coutures artisanales, flat-bottom, commandes préservées.</div>
+      <span class="svc-tag">Homologué</span><div class="svc-arr">→</div>
+    </div>
+
+    <div class="svc-card rv" style="transition-delay:.15s">
+      <div class="svc-img"><img src="https://images.unsplash.com/photo-1493238792000-8113da705763?w=600&q=80" alt="Caméra de recul"></div>
+      <div class="svc-num">03</div><div class="svc-title">Caméras & Vision</div>
+      <div class="svc-desc">Recul HD, 360°, dashcam 4K, vision nocturne. Intégration native dans votre écran d'origine.</div>
+      <span class="svc-tag">4K · 360°</span><div class="svc-arr">→</div>
+    </div>
+
+    <div class="svc-card rv" style="transition-delay:.2s">
+      <div class="svc-img"><img src="https://serveur-statique.jam-difus.com/_telechargement/e-commerce/blog_billet/2024-03-blog-visuels-dechromage-878-274.webp?v=1" alt="Déchromage voiture noire"></div>
+      <div class="svc-num">04</div><div class="svc-title">Déchromage</div>
+      <div class="svc-desc">Blackout total ou partiel des éléments chromés. Film noir brillant, mat ou satiné pour un look unique.</div>
+      <span class="svc-tag">Blackout</span><div class="svc-arr">→</div>
+    </div>
+
+    <div class="svc-card rv" style="transition-delay:.25s">
+      <div class="svc-img"><img src="https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/456169466_18238327660278481_3462324465812749327_n.jpg?stp=dst-jpegr_tt6&_nc_cat=103&ccb=1-7&_nc_sid=13d280&_nc_ohc=nuKQLoapfI4Q7kNvwHVfk97&_nc_oc=Adk1VohS48LeN1dR3EdhDLpYui8MJWdLLl_BGo-Igv3FgUog82mKihCnBCeFNolnHBjFzMvbTeFskXZXBANYRvWg&_nc_zt=23&se=-1&_nc_ht=scontent-cdg4-2.xx&_nc_gid=Nzt5V3zXV9toBT42fggntA&oh=00_AfsW5YV5-KyqpD1TW5-rNCzhTS2GvCMCIuX_7uaYGZuofg&oe=699D25AC" alt="Covering automobile"></div>
+      <div class="svc-num">05</div><div class="svc-title">Covering</div>
+      <div class="svc-desc">Covering vinyle carrosserie, PPF protection, satin, mat, brillant, chrome. Pose professionnelle sans bulle.</div>
+      <span class="svc-tag">PPF · Vinyle</span><div class="svc-arr">→</div>
+    </div>
+
+    <div class="svc-card rv" style="transition-delay:.3s">
+      <div class="svc-img"><img src="https://wash-and-custom.fr/wp-content/uploads/2025/03/tuning-interieur-voiture-ambiance-led.jpg" alt="Éclairage ambiance LED"></div>
+      <div class="svc-num">06</div><div class="svc-title">Éclairage Ambiance</div>
+      <div class="svc-desc">LEDs RGB 64 couleurs, bandes portières, sous sièges, pédalier lumineux. Contrôle via app smartphone.</div>
+      <span class="svc-tag">RGB · App Control</span><div class="svc-arr">→</div>
+    </div>
+
+    <div class="svc-card rv" style="transition-delay:.35s">
+      <div class="svc-img"><img src="https://images.unsplash.com/photo-1605152276897-4f618f831968?w=600&q=80" alt="Nettoyage intérieur detailing"></div>
+      <div class="svc-num">07</div><div class="svc-title">Nettoyage Intérieur</div>
+      <div class="svc-desc">Détailing complet, nettoyage vapeur, traitement à l'ozone, cuirs hydratés, plastiques restaurés.</div>
+      <span class="svc-tag">Detailing</span><div class="svc-arr">→</div>
+    </div>
+
+    <div class="svc-card rv" style="transition-delay:.4s">
+      <div class="svc-img"><img src="https://www.polisseuse-voiture-pro.com/wp-content/uploads/2022/09/polissage-de-voiture-guide-pour-reussir-facilement-_cleaned-1.jpg" alt="Polissage carrosserie"></div>
+      <div class="svc-num">08</div><div class="svc-title">Nettoyage Extérieur</div>
+      <div class="svc-desc">Polish carrosserie, décontamination, cire céramique, traitement vitres hydrophobe, jantes restaurées.</div>
+      <span class="svc-tag">Céramique</span><div class="svc-arr">→</div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<div style="background:var(--bg2);padding:2rem 0;">
+<div class="sw" style="padding-top:0;padding-bottom:0;">
+  <div class="intl rv">
+    <div>
+      <div class="intl-lbl">Service exclusif</div>
+      <h2 class="intl-title">Déplacement International<br>sur demande</h2>
+      <p class="intl-desc">Night LED se déplace partout en Europe et au-delà pour les clients exigeants. Que vous soyez à Paris, Monaco, Dubaï ou ailleurs — nous venons à vous.</p>
+      <div class="intl-chips">
+        <span class="chip">🇧🇪 Belgique</span><span class="chip">🇫🇷 France</span><span class="chip">🇱🇺 Luxembourg</span>
+        <span class="chip">🇨🇭 Suisse</span><span class="chip">🇳🇱 Pays-Bas</span><span class="chip">🇩🇪 Allemagne</span>
+        <span class="chip">🌍 + International</span>
+      </div>
+    </div>
+    <div class="intl-globe">🌍</div>
+  </div>
+</div>
+</div>
+
+<div id="about">
+<div class="sw">
+  <div class="about-grid">
+    <div class="about-vis rl">
+      <div class="about-svg-wrap">
+        <img src="https://images.unsplash.com/photo-1486006920555-c77dcf18193c?w=800&q=80" alt="Atelier Night LED">
+      </div>
+      <div class="about-badge"><span class="n">+600</span><span class="l">Véhicules transformés</span></div>
+      <div class="about-loc">📍 Namur, Belgique</div>
+    </div>
+    <div class="about-text rr">
+      <span class="about-lbl">Notre histoire</span>
+      <h3>15 ans de passion<br>à Namur</h3>
+      <p>Night LED est né à Namur d'une passion pour l'automobile et le détail parfait. Depuis 2009, nous transformons des véhicules de prestige pour une clientèle exigeante en Belgique et à l'international.</p>
+      <p>Notre atelier est équipé des dernières technologies, et chaque technicien maîtrise les matériaux les plus nobles : alcantara, cuir Nappa, fibres de carbone, films PPF dernière génération.</p>
+      <ul class="feat-list">
+        <li>Matériaux premium européens sélectionnés avec soin</li>
+        <li>Techniciens certifiés, 10+ ans d'expérience chacun</li>
+        <li>Garantie 2 ans sur toutes nos prestations</li>
+        <li>Déplacement à domicile en Belgique et à l'étranger</li>
+        <li>Devis gratuit sous 24h — Prise en charge à Namur</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="process-bg">
+<div class="sw" style="padding:0 2rem;">
+  <div class="sh rv">
+    <span class="sh-lbl">Étape par étape</span>
+    <h2 class="sh-title">Notre Processus</h2>
+    <div class="sh-line"></div>
+  </div>
+  <div class="process-grid">
+    <div class="p-step rv" style="transition-delay:.1s"><div class="p-num">01</div><h4>Consultation</h4><p>Échange pour définir votre projet et vos attentes.</p></div>
+    <div class="p-step rv" style="transition-delay:.2s"><div class="p-num">02</div><h4>Devis</h4><p>Proposition détaillée avec matériaux et délais.</p></div>
+    <div class="p-step rv" style="transition-delay:.3s"><div class="p-num">03</div><h4>Réalisation</h4><p>Travail artisanal avec suivi photo en temps réel.</p></div>
+    <div class="p-step rv" style="transition-delay:.4s"><div class="p-num">04</div><h4>Contrôle</h4><p>Inspection qualité rigoureuse avant livraison.</p></div>
+    <div class="p-step rv" style="transition-delay:.5s"><div class="p-num">05</div><h4>Livraison</h4><p>Remise des clés avec démonstration complète.</p></div>
+  </div>
+</div>
+</div>
+
+<div id="gallery" class="gal-bg">
+<div class="sw">
+  <div class="sh rv">
+    <span class="sh-lbl">Portfolio</span>
+    <h2 class="sh-title">Réalisations</h2>
+    <div class="sh-line"></div>
+  </div>
+  <div class="gal-grid">
+    <div class="gi big rv" style="transition-delay:.05s">
+      <img src="https://kitcieletoile.com/wp-content/uploads/2023/09/kit-ciel-etoile.jpg.webp" alt="BMW Série 7 Ciel Etoilé">
+      <div class="gi-ov"><div><h4>Ciel Étoilé LED</h4><span>BMW Série 7 · Alcantara</span></div></div>
+    </div>
+    <div class="gi rv" style="transition-delay:.1s">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.i00uVinUVlFQuip_GoJFAQHaE8?cb=defcache2&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Volant Audi RS6">
+      <div class="gi-ov"><div><h4>Volant Carbon Nappa</h4><span>Audi RS6</span></div></div>
+    </div>
+    <div class="gi rv" style="transition-delay:.15s">
+      <img src="https://images.unsplash.com/photo-1542282088-fe8426682b8f?w=600&q=80" alt="Range Rover Covering Satin">
+      <div class="gi-ov"><div><h4>Covering Satin</h4><span>Range Rover · Noir Satin</span></div></div>
+    </div>
+    <div class="gi rv" style="transition-delay:.2s">
+      <img src="https://m.media-amazon.com/images/I/61h1sXE402L.jpg" alt="Tesla LED Ambiance">
+      <div class="gi-ov"><div><h4>LED Ambiance RGB</h4><span>Tesla Model 3</span></div></div>
+    </div>
+    <div class="gi rv" style="transition-delay:.25s">
+      <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=600&q=80" alt="Mercedes Déchromage">
+      <div class="gi-ov"><div><h4>Déchromage Total</h4><span>Mercedes AMG</span></div></div>
+    </div>
+    <div class="gi big rv" style="transition-delay:.3s">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.FhdKvmILHxuqqAuk90oieQHaEK?cb=defcache2&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Range Rover Sport Intérieur">
+      <div class="gi-ov"><div><h4>Intérieur Sur Mesure</h4><span>Range Rover Sport</span></div></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div>
+<div class="sw">
+  <div class="sh rv">
+    <span class="sh-lbl">Avis clients</span>
+    <h2 class="sh-title">Ils Nous Font Confiance</h2>
+    <div class="sh-line"></div>
+  </div>
+  <div class="testi-grid">
+    <div class="tcard rv" style="transition-delay:.1s">
+      <div class="stars">★ ★ ★ ★ ★</div>
+      <p>« Night LED a transformé l'intérieur de mon BMW en quelque chose d'absolument incroyable. Le ciel étoilé est d'une qualité rare, le rendu dépasse tout ce que j'avais imaginé. »</p>
+      <div class="tclient"><div class="tav"><svg viewBox="0 0 40 40"><rect width="40" height="40" fill="#181818"/><circle cx="20" cy="14" r="8" fill="#2a2a2a"/><ellipse cx="20" cy="36" rx="13" ry="9" fill="#2a2a2a"/></svg></div><div><div class="tname">Alexandre M.</div><div class="tcar">BMW X6 M – Ciel étoilé 800 LED</div></div></div>
+    </div>
+    <div class="tcard rv" style="transition-delay:.2s">
+      <div class="stars">★ ★ ★ ★ ★</div>
+      <p>« Déplacement depuis Monaco pour le covering de ma Bentley. Service impeccable, résultat parfait. Night LED est vraiment au top en matière de finition automobile. »</p>
+      <div class="tclient"><div class="tav"><svg viewBox="0 0 40 40"><rect width="40" height="40" fill="#181818"/><circle cx="20" cy="14" r="8" fill="#222"/><ellipse cx="20" cy="36" rx="13" ry="9" fill="#222"/></svg></div><div><div class="tname">Laurent V.</div><div class="tcar">Bentley Continental – Covering</div></div></div>
+    </div>
+    <div class="tcard rv" style="transition-delay:.3s">
+      <div class="stars">★ ★ ★ ★ ★</div>
+      <p>« Déchromage + caméra 360° en une seule intervention. Travail propre, délai respecté, équipe passionnée. Je recommande Night LED à tous mes amis passionnés d'auto. »</p>
+      <div class="tclient"><div class="tav"><svg viewBox="0 0 40 40"><rect width="40" height="40" fill="#181818"/><circle cx="20" cy="14" r="8" fill="#303030"/><ellipse cx="20" cy="36" rx="13" ry="9" fill="#303030"/></svg></div><div><div class="tname">Thomas D.</div><div class="tcar">Porsche Cayenne – Multi-services</div></div></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="tarifs" style="background:var(--bg2);">
+<div class="sw">
+  <div class="sh rv">
+    <span class="sh-lbl">Investissement</span>
+    <h2 class="sh-title">Nos Tarifs</h2>
+    <div class="sh-line"></div>
+  </div>
+  <div class="ptabs">
+    <button class="ptab active" onclick="pt('ciel',this)">Ciel de Toit</button>
+    <button class="ptab" onclick="pt('volant',this)">Volants</button>
+    <button class="ptab" onclick="pt('cam',this)">Caméras</button>
+    <button class="ptab" onclick="pt('ext',this)">Extérieur</button>
+    <button class="ptab" onclick="pt('clean',this)">Nettoyage</button>
+  </div>
+
+  <div id="p-ciel" class="ptab-c on">
+    <div class="pc-grid">
+      <div class="pc rv"><div class="pc-img"><img src="https://images.unsplash.com/photo-1568590061702-076f69375d89?w=500&q=60" alt="Ciel de toit standard"></div><div class="pc-body"><div class="pc-name">Standard</div><div class="pc-type">Berline / Coupé</div><div class="pc-price">1 200<sup> €</sup></div><ul class="pc-list"><li>Tissu premium sélectionné</li><li>Pose complète</li><li>Garantie 1 an</li></ul></div></div>
+      <div class="pc hot rv" style="transition-delay:.1s"><div class="pc-img"><img src="https://images.unsplash.com/photo-1626847037657-fd3622613cb3?w=500&q=60" alt="Ciel de toit alcantara"></div><div class="pc-body"><div class="pc-hot">⭐ Populaire</div><div class="pc-name">Alcantara</div><div class="pc-type">Toutes catégories</div><div class="pc-price">2 500<sup> €</sup></div><ul class="pc-list"><li>Alcantara haut de gamme</li><li>Coutures personnalisées</li><li>Finitions chromées</li><li>Garantie 2 ans</li></ul></div></div>
+      <div class="pc rv" style="transition-delay:.2s"><div class="pc-img"><img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=500&q=60" alt="Ciel étoilé LED"></div><div class="pc-body"><div class="pc-name">Étoilé LED</div><div class="pc-type">SUV / Berline Luxe</div><div class="pc-price">3 800<sup> €</sup></div><ul class="pc-list"><li>Jusqu'à 1200 étoiles LED</li><li>Alcantara ou daim premium</li><li>Contrôleur RGB inclus</li><li>Garantie 2 ans</li></ul></div></div>
+    </div>
+  </div>
+
+  <div id="p-volant" class="ptab-c">
+    <div class="pc-grid">
+      <div class="pc rv"><div class="pc-img"><img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=500&q=60" alt="Volant cuir standard"></div><div class="pc-body"><div class="pc-name">Cuir Standard</div><div class="pc-type">Toutes marques</div><div class="pc-price">800<sup> €</sup></div><ul class="pc-list"><li>Cuir de qualité</li><li>Suture simple</li><li>Garantie 1 an</li></ul></div></div>
+      <div class="pc hot rv" style="transition-delay:.1s"><div class="pc-img"><img src="https://images.unsplash.com/photo-1615900118284-93033306d302?w=500&q=60" alt="Volant Cuir Nappa"></div><div class="pc-body"><div class="pc-hot">⭐ Best-seller</div><div class="pc-name">Cuir Nappa</div><div class="pc-type">Premium / Sport</div><div class="pc-price">1 400<sup> €</sup></div><ul class="pc-list"><li>Cuir Nappa pleine fleur</li><li>Suture bicolore</li><li>Commandes préservées</li><li>Garantie 2 ans</li></ul></div></div>
+      <div class="pc rv" style="transition-delay:.2s"><div class="pc-img"><img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=500&q=60" alt="Volant Carbon"></div><div class="pc-body"><div class="pc-name">Carbon Alcantara</div><div class="pc-type">Sport / Luxe</div><div class="pc-price">2 200<sup> €</sup></div><ul class="pc-list"><li>Fibre de carbone</li><li>Alcantara flat-bottom</li><li>Finitions aluminium brossé</li><li>Garantie 2 ans</li></ul></div></div>
+    </div>
+  </div>
+
+  <div id="p-cam" class="ptab-c">
+    <div class="pc-grid">
+      <div class="pc rv"><div class="pc-img"><img src="https://images.unsplash.com/photo-1592853625601-bb9d23da126e?w=500&q=60" alt="Caméra de recul"></div><div class="pc-body"><div class="pc-name">Recul HD</div><div class="pc-type">Berline / SUV</div><div class="pc-price">350<sup> €</sup></div><ul class="pc-list"><li>Caméra 1080p</li><li>Intégration OEM</li><li>Câblage invisible</li></ul></div></div>
+      <div class="pc hot rv" style="transition-delay:.1s"><div class="pc-img"><img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=500&q=60" alt="Caméra 360"></div><div class="pc-body"><div class="pc-hot">⭐ Populaire</div><div class="pc-name">Caméra 360°</div><div class="pc-type">Toutes catégories</div><div class="pc-price">1 200<sup> €</sup></div><ul class="pc-list"><li>4 caméras HD</li><li>Vue bird's eye</li><li>Aide au parking</li><li>Intégration OEM</li></ul></div></div>
+      <div class="pc rv" style="transition-delay:.2s"><div class="pc-img"><img src="https://images.unsplash.com/photo-1611016384826-a89b79a20c31?w=500&q=60" alt="Dashcam"></div><div class="pc-body"><div class="pc-name">Dashcam 4K</div><div class="pc-type">Pro / Luxe</div><div class="pc-price">700<sup> €</sup></div><ul class="pc-list"><li>Avant + Arrière 4K</li><li>Vision nocturne</li><li>GPS intégré</li><li>Installation discrète</li></ul></div></div>
+    </div>
+  </div>
+
+  <div id="p-ext" class="ptab-c">
+    <div class="pc-grid">
+      <div class="pc rv"><div class="pc-img"><img src="https://images.unsplash.com/photo-1590126365473-4944d094604b?w=500&q=60" alt="Déchromage"></div><div class="pc-body"><div class="pc-name">Déchromage</div><div class="pc-type">Éléments extérieurs</div><div class="pc-price">300<sup> €</sup></div><ul class="pc-list"><li>Film noir brillant/mat/satiné</li><li>Calandre, encadrements</li><li>Baguettes & poignées</li></ul></div></div>
+      <div class="pc hot rv" style="transition-delay:.1s"><div class="pc-img"><img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b0a?w=500&q=60" alt="Covering Complet"></div><div class="pc-body"><div class="pc-hot">⭐ Populaire</div><div class="pc-name">Covering Complet</div><div class="pc-type">Carrosserie entière</div><div class="pc-price">1 800<sup> €</sup></div><ul class="pc-list"><li>Vinyle ou PPF premium</li><li>Mat, brillant, satin, chrome</li><li>Pose sans bulle ni joint</li><li>Garantie 2 ans</li></ul></div></div>
+      <div class="pc rv" style="transition-delay:.2s"><div class="pc-img"><img src="https://images.unsplash.com/photo-1632823469850-31320a054192?w=500&q=60" alt="Polish Céramique"></div><div class="pc-body"><div class="pc-name">Polish Céramique</div><div class="pc-type">Protection carrosserie</div><div class="pc-price">600<sup> €</sup></div><ul class="pc-list"><li>Polish 3 étapes</li><li>Cire céramique nano</li><li>Vitres hydrophobes</li><li>Jantes restaurées</li></ul></div></div>
+    </div>
+  </div>
+
+  <div id="p-clean" class="ptab-c">
+    <div class="pc-grid">
+      <div class="pc rv"><div class="pc-img"><img src="https://images.unsplash.com/photo-1599256872237-5dcc0fbe9668?w=500&q=60" alt="Nettoyage intérieur"></div><div class="pc-body"><div class="pc-name">Intérieur Essentiel</div><div class="pc-type">Nettoyage standard</div><div class="pc-price">150<sup> €</sup></div><ul class="pc-list"><li>Aspirateur professionnel</li><li>Plastiques nettoyés</li><li>Vitres intérieures</li></ul></div></div>
+      <div class="pc hot rv" style="transition-delay:.1s"><div class="pc-img"><img src="https://images.unsplash.com/photo-1600099092572-420d95690567?w=500&q=60" alt="Detailing Complet"></div><div class="pc-body"><div class="pc-hot">⭐ Recommandé</div><div class="pc-name">Detailing Complet</div><div class="pc-type">Intérieur + Extérieur</div><div class="pc-price">380<sup> €</sup></div><ul class="pc-list"><li>Nettoyage vapeur</li><li>Cuirs hydratés</li><li>Traitement à l'ozone</li><li>Polish extérieur inclus</li></ul></div></div>
+      <div class="pc rv" style="transition-delay:.2s"><div class="pc-img"><img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=500&q=60" alt="Restauration Luxe"></div><div class="pc-body"><div class="pc-name">Restauration Luxe</div><div class="pc-type">Véhicules de prestige</div><div class="pc-price">600<sup> €</sup></div><ul class="pc-list"><li>Ozone & ionisation</li><li>Restauration plastiques</li><li>Cuirs premium traités</li><li>Rapport complet fourni</li></ul></div></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="contact">
+<div class="sw">
+  <div class="sh rv">
+    <span class="sh-lbl">On discute ?</span>
+    <h2 class="sh-title">Contactez Night LED</h2>
+    <div class="sh-line"></div>
+  </div>
+  <div class="cg">
+    <div class="rl">
+      <div class="ci-title">Prenons<br>rendez-vous<br>à Namur</div>
+      <div class="ci-item"><div class="ci-icon">📍</div><div><span class="ci-lbl">Adresse</span><div class="ci-val">Rue de l'Artisan 14<br>5000 Namur, Belgique</div></div></div>
+      <div class="ci-item"><div class="ci-icon">📞</div><div><span class="ci-lbl">Téléphone</span><div class="ci-val">+32 81 00 00 00</div></div></div>
+      <div class="ci-item"><div class="ci-icon">✉️</div><div><span class="ci-lbl">Email</span><div class="ci-val">contact@nightled.be</div></div></div>
+      <div class="ci-item"><div class="ci-icon">🕐</div><div><span class="ci-lbl">Horaires</span><div class="ci-val">Lun–Ven : 9h–18h30<br>Sam : 9h–13h (RDV)<br>Déplacement 7j/7</div></div></div>
+    </div>
+    <div class="rr">
+      <div class="cform">
+        <div id="fCon">
+          <div class="form-row">
+            <div class="fg"><label>Prénom</label><input type="text" id="fn" placeholder="Jean"></div>
+            <div class="fg"><label>Nom</label><input type="text" id="ln" placeholder="Dupont"></div>
+          </div>
+          <div class="form-row">
+            <div class="fg"><label>Email</label><input type="email" id="em" placeholder="jean@email.be"></div>
+            <div class="fg"><label>Téléphone</label><input type="tel" id="ph" placeholder="+32 4XX XX XX XX"></div>
+          </div>
+          <div class="fg"><label>Véhicule</label><input type="text" id="vh" placeholder="Ex : BMW X5 – 2023"></div>
+          <div class="fg"><label>Prestation souhaitée</label>
+            <select id="sv">
+              <option value="">-- Choisir --</option>
+              <option>Ciel de toit standard</option><option>Ciel de toit alcantara</option><option>Ciel de toit étoilé LED</option>
+              <option>Volant cuir</option><option>Volant cuir Nappa</option><option>Volant carbon & alcantara</option>
+              <option>Caméra de recul HD</option><option>Caméra 360°</option><option>Dashcam 4K</option>
+              <option>Déchromage</option><option>Covering carrosserie</option><option>Polish & céramique</option>
+              <option>Éclairage ambiance LED</option><option>Nettoyage intérieur</option><option>Detailing complet</option>
+              <option>Déplacement international</option><option>Autre prestation</option>
+            </select>
+          </div>
+          <div class="fg"><label>Message</label><textarea id="msg" placeholder="Décrivez votre projet..."></textarea></div>
+          <button class="btn btn-w" style="width:100%;justify-content:center;" onclick="sendF()">Envoyer ma demande</button>
+        </div>
+        <div class="fsuccess" id="fOk">
+          <span class="big">✅</span>
+          <strong>Message reçu !</strong>
+          <p>L'équipe Night LED vous recontacte sous 24h.<br>À très bientôt — à Namur ou chez vous !</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="map-wrap rv" style="margin-top:3rem;">
+    <div class="map-hd">
+      <div class="map-dot"></div>
+      <div>
+        <div style="font-size:.88rem;font-weight:700;">Night LED · Namur</div>
+        <div style="font-size:.7rem;color:var(--muted);margin-top:.2rem;letter-spacing:1px;">Rue de l'Artisan 14, 5000 Namur — Belgique</div>
+      </div>
+    </div>
+    <div class="map-cw"><canvas id="mapC"></canvas></div>
+  </div>
+</div>
+</div>
+
+<footer>
+  <div class="fg-grid">
+    <div>
+      <div class="f-logo">Night LED</div>
+      <div class="f-tag">Namur · Belgique · International</div>
+      <p class="f-desc">Préparateur automobile premium basé à Namur. Ciel de toit, volants, caméras, covering, déchromage et plus — avec déplacement partout en Europe.</p>
+    </div>
+    <div class="fc"><h4>Prestations</h4><ul><li><a href="#services">Ciel de Toit</a></li><li><a href="#services">Volants</a></li><li><a href="#services">Caméras</a></li><li><a href="#services">Covering</a></li><li><a href="#services">Déchromage</a></li><li><a href="#services">LED Ambiance</a></li></ul></div>
+    <div class="fc"><h4>Nettoyage</h4><ul><li><a href="#services">Intérieur</a></li><li><a href="#services">Detailing</a></li><li><a href="#services">Céramique</a></li><li><a href="#services">Restauration</a></li></ul></div>
+    <div class="fc"><h4>Night LED</h4><ul><li><a href="#about">Notre Studio</a></li><li><a href="#gallery">Galerie</a></li><li><a href="#tarifs">Tarifs</a></li><li><a href="#contact">Contact</a></li><li><a href="#contact">Déplacement Intl.</a></li></ul></div>
+  </div>
+  <div class="f-bottom">
+    <p>© 2026 Night LED · Namur, Belgique · Tous droits réservés</p>
+    <div class="socials">
+      <a href="#" class="sb">IG</a><a href="#" class="sb">FB</a><a href="#" class="sb">TK</a><a href="#" class="sb">YT</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
